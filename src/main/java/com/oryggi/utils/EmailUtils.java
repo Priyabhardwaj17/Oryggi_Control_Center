@@ -34,7 +34,8 @@ public class EmailUtils {
 			String subject = message.getSubject();
 			if(subject.contains("OTP to reset Password")) {
 				String content = message.getContent().toString();
-				String otp = content.replaceAll("[^0-6]", "");
+				String otp = content.replaceAll("[^0-7]", "");
+				  System.out.println("Extracted OTP: " + otp);
 				message.setFlag(Flags.Flag.SEEN, true);
 				return otp;
 			}
