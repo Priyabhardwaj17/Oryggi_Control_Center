@@ -85,7 +85,7 @@ Edit
 
 **Priya Sharma**  
 QA Automation Engineer | Java + Selenium + TestNG  
-📧 priya.sharma@example.com
+📧 bharadwajpriya95@gmail.com
 
 ---
 
