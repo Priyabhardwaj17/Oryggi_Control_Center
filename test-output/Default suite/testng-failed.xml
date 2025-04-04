@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.oryggi.tests.LoginTest">
+      <class name="com.oryggi.tests.ScreenshotTest">
         <methods>
-          <include name="testLoginWithInvalidCredentials"/>
+          <include name="forceFailScreenshotTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.oryggi.tests.LoginTest -->
+      </class> <!-- com.oryggi.tests.ScreenshotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

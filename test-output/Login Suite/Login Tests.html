@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 25 02:34:53 IST 2025</td>
+<td>Started on:</td><td>Sun Mar 02 00:09:40 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14693 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46461 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,58 +75,27 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.oryggi.tests.LoginTest.testLoginWithUsername()'><b>testLoginWithUsername</b><br>Test class: com.oryggi.tests.LoginTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problem: 
-	The method isDashboardDisplayed() is undefined for the type LoginPage
-
-	at com.oryggi.tests.LoginTest.testLoginWithUsername(LoginTest.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace584501954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace584501954'><pre>java.lang.Error: Unresolved compilation problem: 
-	The method isDashboardDisplayed() is undefined for the type LoginPage
-
-	at com.oryggi.tests.LoginTest.testLoginWithUsername(LoginTest.java:27)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.oryggi.tests.LoginTest@5f058f00</td></tr>
-<tr>
 <td title='com.oryggi.tests.LoginTest.testLoginWithEmail()'><b>testLoginWithEmail</b><br>Test class: com.oryggi.tests.LoginTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problem: 
-	The method isDashboardDisplayed() is undefined for the type LoginPage
-
-	at com.oryggi.tests.LoginTest.testLoginWithEmail(LoginTest.java:39)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;dashboard&quot;. Current url: &quot;https://localhost/OryggiManagerWeb/login&quot; (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\PRIYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56048/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d94a23322340562dfeb68d407da4876
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.oryggi.tests.LoginTest.testLoginWithEmail(LoginTest.java:61)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1809129176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1809129176'><pre>java.lang.Error: Unresolved compilation problem: 
-	The method isDashboardDisplayed() is undefined for the type LoginPage
-
-	at com.oryggi.tests.LoginTest.testLoginWithEmail(LoginTest.java:39)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1689717017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1689717017'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;dashboard&quot;. Current url: &quot;https://localhost/OryggiManagerWeb/login&quot; (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\PRIYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56048/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d94a23322340562dfeb68d407da4876
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.oryggi.tests.LoginTest.testLoginWithEmail(LoginTest.java:61)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -154,8 +123,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>com.oryggi.tests.LoginTest@5f058f00</td></tr>
+<td>10</td>
+<td>com.oryggi.tests.LoginTest@43195e57</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -167,8 +136,23 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.oryggi.tests.LoginTest.verifyLoginPageTitle()'><b>verifyLoginPageTitle</b><br>Test class: com.oryggi.tests.LoginTest</td>
 <td></td>
+<td>2</td>
+<td>com.oryggi.tests.LoginTest@43195e57</td></tr>
+<tr>
+<td title='com.oryggi.tests.LoginTest.testLoginWithInvalidCredentials()'><b>testLoginWithInvalidCredentials</b><br>Test class: com.oryggi.tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>com.oryggi.tests.LoginTest@43195e57</td></tr>
+<tr>
+<td title='com.oryggi.tests.LoginTest.testEmptyFieldsValidation()'><b>testEmptyFieldsValidation</b><br>Test class: com.oryggi.tests.LoginTest</td>
+<td></td>
 <td>0</td>
-<td>com.oryggi.tests.LoginTest@5f058f00</td></tr>
+<td>com.oryggi.tests.LoginTest@43195e57</td></tr>
+<tr>
+<td title='com.oryggi.tests.LoginTest.testLoginWithUsername()'><b>testLoginWithUsername</b><br>Test class: com.oryggi.tests.LoginTest</td>
+<td></td>
+<td>3</td>
+<td>com.oryggi.tests.LoginTest@43195e57</td></tr>
 </table><p>
 </body>
 </html>
