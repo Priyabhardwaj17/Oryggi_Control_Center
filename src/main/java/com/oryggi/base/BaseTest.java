@@ -1,18 +1,22 @@
 package com.oryggi.base;
 
 import org.testng.annotations.BeforeMethod;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
+
 
 
 
 public class BaseTest {
 
 	protected  WebDriver driver;
+	 protected WebDriverWait wait;
 	
 	@BeforeMethod
 	public void setup() throws InterruptedException {
@@ -40,6 +44,11 @@ public class BaseTest {
 			
 		}
 	}
+	
+	 // ✅ Added this method to allow ScreenshotUtil to access WebDriver
+    public WebDriver getDriver() {
+        return driver;
+    }
 	@AfterMethod
 	public void tearDown() {
 		if(driver != null) {

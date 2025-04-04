@@ -14,7 +14,7 @@ public class EmailUtils {
 	private static final String USERNAME = "oryggiserver@gmail.com";
 	private static final String PASSWORD = "qmoqtdboeqtjugrf";
 	
-	public static String getLATESTOTP()  {
+	public static String getLatestOtp()  {
 		try {
 		Properties properties = new Properties();
 		properties.put("mail.store.protocol", "imaps");
@@ -34,7 +34,7 @@ public class EmailUtils {
 			String subject = message.getSubject();
 			if(subject.contains("OTP to reset Password")) {
 				String content = message.getContent().toString();
-				String otp = content.replaceAll("[^0-7]", "");
+				String otp = content.replaceAll("[^0-9]", "");
 				  System.out.println("Extracted OTP: " + otp);
 				message.setFlag(Flags.Flag.SEEN, true);
 				return otp;
