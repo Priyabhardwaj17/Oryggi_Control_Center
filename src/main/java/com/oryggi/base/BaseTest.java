@@ -49,6 +49,7 @@ public class BaseTest {
     public WebDriver getDriver() {
         return driver;
     }
+    
 	@AfterMethod
 	public void tearDown() {
 		if(driver != null) {

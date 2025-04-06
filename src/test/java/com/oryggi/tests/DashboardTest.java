@@ -4,11 +4,13 @@ import java.time.Duration;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.oryggi.pages.LoginPage;
 import com.oryggi.base.BaseTest;
 import com.oryggi.pages.DashboardPage;
 
+@Listeners(com.oryggi.listeners.TestListener.class)
 public class DashboardTest extends BaseTest {
 
     @Test

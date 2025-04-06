@@ -9,13 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">5,549</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">143,361</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.oryggi.tests.ScreenshotTest</td><td><a href="#m0">forceFailScreenshotTest</a></td><td rowspan="1">1743759682516</td><td rowspan="1">11</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.oryggi.tests.LoginTest</td><td><a href="#m0">testRememberMeFunctionality</a></td><td rowspan="1">1743964481703</td><td rowspan="1">2645</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.oryggi.tests.LoginTest</td><td><a href="#m1">testEmptyFieldsValidation</a></td><td rowspan="1">1743964447072</td><td rowspan="1">150</td></tr><tr class="passedeven"><td><a href="#m2">testLoginPageResponsiveness</a></td><td rowspan="1">1743964491663</td><td rowspan="1">94390</td></tr><tr class="passedeven"><td><a href="#m3">testLoginWithEmail</a></td><td rowspan="1">1743964450615</td><td rowspan="1">2345</td></tr><tr class="passedeven"><td><a href="#m4">testLoginWithEmptyPassword</a></td><td rowspan="1">1743964456333</td><td rowspan="1">842</td></tr><tr class="passedeven"><td><a href="#m5">testLoginWithEmptyUsername</a></td><td rowspan="1">1743964460983</td><td rowspan="1">300</td></tr><tr class="passedeven"><td><a href="#m6">testLoginWithInvalidCredentials</a></td><td rowspan="1">1743964465041</td><td rowspan="1">1487</td></tr><tr class="passedeven"><td><a href="#m7">testLoginWithUsername</a></td><td rowspan="1">1743964470730</td><td rowspan="1">2368</td></tr><tr class="passedeven"><td><a href="#m8">testPasswordMasking</a></td><td rowspan="1">1743964477150</td><td rowspan="1">90</td></tr><tr class="passedeven"><td><a href="#m9">verifyLoginPageTitle</a></td><td rowspan="1">1743964488116</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.oryggi.tests.ScreenshotTest#forceFailScreenshotTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing test to trigger screenshot
+<h2>Default test</h2><h3 id="m0">com.oryggi.tests.LoginTest#testRememberMeFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Remember Me functionality failed! expected [Admin] but found []
 	at org.testng.Assert.fail(Assert.java:99)
-	at com.oryggi.tests.ScreenshotTest.forceFailScreenshotTest(ScreenshotTest.java:12)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.oryggi.tests.LoginTest.testRememberMeFunctionality(LoginTest.java:138)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -43,5 +47,14 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.oryggi.tests.LoginTest#testEmptyFieldsValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.oryggi.tests.LoginTest#testLoginPageResponsiveness</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.oryggi.tests.LoginTest#testLoginWithEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.oryggi.tests.LoginTest#testLoginWithEmptyPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.oryggi.tests.LoginTest#testLoginWithEmptyUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.oryggi.tests.LoginTest#testLoginWithInvalidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.oryggi.tests.LoginTest#testLoginWithUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.oryggi.tests.LoginTest#testPasswordMasking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.oryggi.tests.LoginTest#verifyLoginPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
